@@ -1,8 +1,8 @@
-import usersData from "./usersData.json";
+import PostsData from "./PostsData.json";
 import { Table } from "reactstrap";
 
-const Users = () => {
-    const myD = usersData[0];
+const Posts = () => {
+    const myD = PostsData[0];
     const myKey = Object.keys(myD);
     return (
         <>
@@ -15,10 +15,10 @@ const Users = () => {
                     </tr>
                 </thead>
                 <tbody>
-                    {usersData.map((data, index) => (
+                    {PostsData.map((data, index) => (
                         <tr key={index}>
                             {myKey.map((key) => (
-                                <td>{typeof data[key]==="object"? JSON.stringify(data[key]):data[key]}</td>
+                                <td>{data[key]}</td>
                             ))}
                         </tr>
                     ))}
@@ -28,4 +28,4 @@ const Users = () => {
     )
 }
 
-export default Users;
+export default Posts;
