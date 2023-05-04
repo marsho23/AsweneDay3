@@ -9,11 +9,13 @@ import Posts from './components/RoutingWithStaticDataTask/Posts';
 import ToDos from './components/RoutingWithStaticDataTask/ToDos';
 import Nav from './components/RoutingWithStaticDataTask/Nav';
 import EmployeeInfo from './components/EmployeeInfo';
+import FilmRequest from './components/FilmRequest';
 
 function App() {
   return (
     <>
-      <EmployeeInfo/>
+      <FilmRequest/>
+      {/* <EmployeeInfo/> */}
       {/* <BrowserRouter>
       <Nav/>
       <Route path="/" exact>
