@@ -8,11 +8,13 @@ import Photos from './components/RoutingWithStaticDataTask/Photos';
 import Posts from './components/RoutingWithStaticDataTask/Posts';
 import ToDos from './components/RoutingWithStaticDataTask/ToDos';
 import Nav from './components/RoutingWithStaticDataTask/Nav';
+import EmployeeInfo from './components/EmployeeInfo';
 
 function App() {
   return (
     <>
-      <BrowserRouter>
+      <EmployeeInfo/>
+      {/* <BrowserRouter>
       <Nav/>
       <Route path="/" exact>
         <Home/>
@@ -35,7 +37,7 @@ function App() {
       <Route path="/ToDos">
         <ToDos/>
       </Route>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
